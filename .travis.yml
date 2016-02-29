@@ -1,5 +1,3 @@
-language: c
-
 matrix:
   include:
     - os: osx
@@ -13,8 +11,8 @@ env:
  - THEOS=theos
 
 before_script:
- - brew update
- - brew install dpkg ldid
+ - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update            ; fi
+ - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install dpkg ldid ; fi
  - git clone --recursive https://github.com/theos/theos.git
 
 script:
