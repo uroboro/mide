@@ -18,5 +18,3 @@ matrix:
       before_script:
         - brew update
         - brew install dpkg ldid
-    - os: linux
-      dist: trusty
