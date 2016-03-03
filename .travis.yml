@@ -1,19 +1,22 @@
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode7.2
-      sudo: false
-    - os: linux
-      dist: trusty
-      sudo: required
+language: generic
 
 env:
  - THEOS=theos
 
 before_script:
- - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update            ; fi
- - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install dpkg ldid ; fi
  - git clone --recursive https://github.com/theos/theos.git
 
 script:
  - make
+
+sudo: false
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode7.2
+      before_script:
+        - brew update
+        - brew install dpkg ldid
+    - os: linux
+      dist: trusty
