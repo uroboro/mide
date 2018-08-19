@@ -14,6 +14,7 @@ Aims to be a simple IDE initially for development *on* (jailbroken) iOS devices 
 | Core | [AnsiEscapeHelper](https://github.com/ferostar/AnsiEscapeHelper) | AnsiEscapeHelper port to work on iOS | - | - | - |
 | Core | [PEGKit](https://github.com/itod/pegkit) | 'Parsing Expression Grammar' toolkit for Cocoa/Objective-C | MIT | - | - |
 | Core | [ClangKit](https://github.com/macmade/ClangKit) | ClangKit provides an Objective-C frontend to LibClang. Source tokenization, diagnostics and fix-its are actually implemented. | Boost | - | - |
+| Core | [ios_system](https://github.com/holzschu/ios_system) | Drop-in replacement for system() in iOS programs | Various | - | iOS 10+ |
 | UI | [ECSlidingViewController](https://github.com/ECSlidingViewController/ECSlidingViewController) | Customizable sliding view controller container. | MIT | Pods/- | Version 1 for iOS 5-7 or current for iOS 7+ |
 | UI | [PanelKit](https://github.com/louisdh/panelkit) | A UI framework that enables panels on iOS. | MIT | Carthage | iOS 9.0+ |
 | UI | [SCSafariPageController](https://github.com/stefanceriu/SCSafariPageController) | A page view controller component that reproduces Mobile Safari's tab switching behavior | MIT | Pods | - |
